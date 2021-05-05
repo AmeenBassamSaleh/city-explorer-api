@@ -1,9 +1,10 @@
+require('dotenv').config();
 const express = require('express')
 const weather = require('./assets/weather.json')
 const cors = require('cors')
 
 const app = express()
-require('dotenv').config();
+
 app.use(cors())
 
 const PORT = process.env.PORT ||3020
@@ -25,7 +26,11 @@ class Weather {
   }
 }
  
-app.listen(PORT)
+app.listen(PORT,()=>console.log('app is lisening on port ' +PORT))
+
+
+
+
 
 
 // البكج، أحرف كبيرة للclass
