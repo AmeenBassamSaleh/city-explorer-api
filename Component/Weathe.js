@@ -3,6 +3,7 @@ const superagent = require('superagent');
 const WEATHER_BIT_KEY = process.env.WEATHER_BIT_KEY;
 
 
+
 const getWeather = (req, res) => {
   // console.log(req.query.lat);
   // console.log('her is bake end');
@@ -19,7 +20,7 @@ const getWeather = (req, res) => {
   }).catch(console.error)
   
   // console.log(weatherUrl);
-  console.log(req.query.name);
+  // console.log(req.query.name);
 
 }
 
